@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Noir</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Café Noir</div>
+    <ul class="nav-links">
+      <li><a href="#menu">მენიუ</a></li>
+      <li><a href="#gallery">გალერეა</a></li>
+      <li><a href="#booking">დაჯავშნა</a></li>
+      <li><a href="#contact">კონტაქტი</a></li>
+    </ul>
+    <a href="#booking" class="btn btn-primary" style="font-size:12px; padding:9px 20px;">დაჯავშნა</a>
+  </nav>
+
+  <section class="hero">
+    <div style="position:relative; z-index:1;">
+      <div class="hero-badge">თბილისი, 2019</div>
+      <h1>სადაც<span>გემო ცხოვრობს</span></h1>
+      <p class="hero-sub">სწრაფი კვება რომელიც შეიცავს სიმდიდრეს — ახალი ინგრედიენტები, ვნებიანი შეფ-მზარეული, უნიკალური გამოცდილება.</p>
+      <div class="btn-group">
+        <a href="#menu" class="btn btn-primary">მენიუს ნახვა</a>
+        <a href="#booking" class="btn btn-outline">მაგიდის დაჯავშნა</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="menu-inner">
+      <div class="section-label">ჩვენი შეთავაზება</div>
+      <div class="section-title">მენიუ</div>
+      <div class="divider"></div>
+      <div class="menu-tabs">
+        <button class="tab active" onclick="showTab('burger')">🍔 ბურგერები</button>
+        <button class="tab" onclick="showTab('coffee')">☕ სასმელები</button>
+        <button class="tab" onclick="showTab('dessert')">🍰 დესერტები</button>
+      </div>
+
+      <div id="tab-burger" class="menu-section active">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-img">🍔</div>
+            <div>
+              <div class="item-name">Noir Classic</div>
+              <div class="item-desc">ანგუსის საქონლის ხორცი, ჩედარი, კარამელიზებული ხახვი, სპეციალური სოუსი</div>
+              <div class="item-tag">bestseller</div>
+            </div>
+            <div class="item-price">18 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🥩</div>
+            <div>
+              <div class="item-name">Black Truffle</div>
+              <div class="item-desc">ვაგიუ ბიფი, ტრუფელის მაიონეზი, არუგულა, პარმეზანი</div>
+            </div>
+            <div class="item-price">28 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🌿</div>
+            <div>
+              <div class="item-name">Garden Noir</div>
+              <div class="item-desc">მცენარეული კოტლეტი, ავოკადო, ჭარხლის ჰუმუსი, სალათა</div>
+              <div class="item-tag">vegan</div>
+            </div>
+            <div class="item-price">15 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🍟</div>
+            <div>
+              <div class="item-name">Crispy Fries</div>
+              <div class="item-desc">პარმეზანი, ტრუფელის ზეთი, ახალი ბალახები</div>
+            </div>
+            <div class="item-price">9 ₾</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-coffee" class="menu-section">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-img">☕</div>
+            <div>
+              <div class="item-name">Noir Espresso</div>
+              <div class="item-desc">ეთიოპიური სპეციალური ნათელი გამოწვა, ხილის ნოტები</div>
+              <div class="item-tag">single origin</div>
+            </div>
+            <div class="item-price">5 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🧋</div>
+            <div>
+              <div class="item-name">Cold Brew</div>
+              <div class="item-desc">24 საათი გაციებულ წყალში დაყენებული, ვანილის შაქარი</div>
+            </div>
+            <div class="item-price">8 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🥤</div>
+            <div>
+              <div class="item-name">Matcha Latte</div>
+              <div class="item-desc">იაპონური მატჩა, შვრიის რძე, სიროფი</div>
+            </div>
+            <div class="item-price">9 ₾</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab-dessert" class="menu-section">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="item-img">🍰</div>
+            <div>
+              <div class="item-name">Chocolate Noir Cake</div>
+              <div class="item-desc">ბელგიური შოკოლადი, გაჟღენთილი ბისკვიტი, ტრუფელის კრემი</div>
+              <div class="item-tag">chef's special</div>
+            </div>
+            <div class="item-price">12 ₾</div>
+          </div>
+          <div class="menu-item">
+            <div class="item-img">🍮</div>
+            <div>
+              <div class="item-name">Crème Brûlée</div>
+              <div class="item-desc">ვანილის კარამელი, სეზონური კენკრა</div>
+            </div>
+            <div class="item-price">11 ₾</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="section-label">ჩვენი სამყარო</div>
+    <div class="section-title">ატმოსფერო</div>
+    <div class="divider"></div>
+    <div class="gallery-grid">
+      <div class="gallery-cell" style="background:#1c1609;">🍔<div class="gallery-label">signature burger</div></div>
+      <div class="gallery-cell" style="background:#120d08;">☕<div class="gallery-label">ყავის კუთხე</div></div>
+      <div class="gallery-cell" style="background:#0e1208;">🌿<div class="gallery-label">ახალი ინგრედიენტები</div></div>
+      <div class="gallery-cell" style="background:#100e15;">🕯️<div class="gallery-label">ღამის ინტერიერი</div></div>
+      <div class="gallery-cell" style="background:#150e0a;">🍰<div class="gallery-label">დესერტები</div></div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="booking-inner">
+      <div class="section-label">გამოიჯდი ჩვენთან</div>
+      <div class="section-title">მაგიდის დაჯავშნა</div>
+      <div class="divider"></div>
+      <p style="color: var(--text-muted); font-size:14px; margin-bottom:2rem; line-height:1.7;">შეავსე ფორმა და ჩვენ დაგიდასტურებთ ჯავშანს 1 საათის განმავლობაში.</p>
+      <div style="margin-top:2rem;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">სახელი</label>
+            <input type="text" id="name" placeholder="შენი სახელი">
+          </div>
+          <div class="form-group">
+            <label for="phone">ტელეფონი</label>
+            <input type="tel" id="phone" placeholder="+995 5XX XXX XXX">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">თარიღი</label>
+            <input type="date" id="date">
+          </div>
+          <div class="form-group">
+            <label for="time">დრო</label>
+            <select id="time">
+              <option value="">აირჩიე დრო</option>
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>15:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="guests">სტუმრების რაოდენობა</label>
+          <select id="guests">
+            <option>1 სტუმარი</option>
+            <option>2 სტუმარი</option>
+            <option>3 სტუმარი</option>
+            <option>4 სტუმარი</option>
+            <option>5+ სტუმარი</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="note">შენიშვნა (სურვილისამებრ)</label>
+          <textarea id="note" placeholder="სპეციალური სურვილები, ალერგია..."></textarea>
+        </div>
+        <button class="submit-btn" onclick="submitBooking()">მაგიდის დაჯავშნა →</button>
+        <div class="success-msg" id="success-msg">✓ &nbsp; თქვენი ჯავშანი მიღებულია! ჩვენ დაგიკავშირდებით მალე.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-label">მოგვინახულე</div>
+    <div class="section-title">კონტაქტი</div>
+    <div class="divider"></div>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h3>მისამართი</h3>
+        <p>
+          📍 თბილისი, ვერა<br>
+          ლესელიძის ქ. 42<br><br>
+          📞 <a href="tel:+995599000000">+995 599 00 00 00</a><br>
+          ✉️ <a href="mailto:hello@cafenoir.ge">hello@cafenoir.ge</a><br><br>
+          📱 Instagram: <a href="#">@cafenoir.tbilisi</a>
+        </p>
+      </div>
+      <div class="contact-block">
+        <h3>სამუშაო საათები</h3>
+        <div class="hours-row"><span>ორშ — პარ</span><span>10:00 — 23:00</span></div>
+        <div class="hours-row"><span>შაბათი</span><span>11:00 — 00:00</span></div>
+        <div class="hours-row"><span>კვირა</span><span>11:00 — 22:00</span></div>
+        <div style="background:rgba(201,168,76,0.08); border-left:2px solid var(--gold); padding:12px 14px; margin-top:1.5rem;">
+          <p style="color:var(--text-muted); font-size:13px; line-height:1.6;">
+            🚗 უფასო პარკინგი ეზოში<br>
+            🐾 Pet-friendly ტერასა
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Café Noir</div>
+    <div class="footer-text" style="margin-top:0.5rem;">© 2024 Café Noir. ყველა უფლება დაცულია.</div>
+    <div class="footer-text" style="margin-top:0.25rem;">თბილისი, საქართველო</div>
+  </footer>
+
+  <script>
+    function showTab(name) {
+      document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('tab-' + name).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function submitBooking() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      if (!name || !phone || !date || !time) {
+        alert('გთხოვ შეავსო სავალდებულო ველები.');
+        return;
+      }
+      document.getElementById('success-msg').style.display = 'block';
+      const btn = document.querySelector('.submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'ჯავშანი გაიგზავნა ✓';
+      btn.style.background = '#2a2a2a';
+      btn.style.color = 'var(--gold)';
+    }
+  </script>
+
+</body>
+</html>
